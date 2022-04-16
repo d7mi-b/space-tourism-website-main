@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../assets/technology/background-technology-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    color: #bbb;
+    height: 100vh;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.navbar {
+    padding: 20px 80px;
+    display: flex;
+}
+
+.navbar .logo {
+    width: 50%;
+    padding: 10px;
+}
+
+.navbar .logo hr {
+    display: inline-block;
+    width: 85%;
+    position: relative;
+    top: -42%;
+    left: 85%;
+    transform: translate(-80%, 0);
+    color: rgba(48, 51, 59, 0.5);
+}
+
+.navbar .list {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+    background-color: rgba(48, 51, 59, 0.5);
+}
+
+.navbar .list li {
+    padding: 25px;
+    margin: 0px 10px 0;
+}
+
+.navbar .list li:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.navbar .list li a {
+    color: #fff;
+    text-decoration: none;
+    margin: 15px auto;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+@media (min-width: 375px) and (max-width: 992px) {
+    body {
+        background-image: url(../assets/technology/background-technology-mobile.jpg);
+        background-size: cover;
+        height: auto;
+    }
+    .mobile-nav {
+        display: block;
+        padding: 20px;
+    }
+    .navbar {
+        padding: 30px 20px;
+        justify-content: space-around;
+    }
+    .navbar .list {
+        display: none;
+        background-color: rgba(48, 51, 59, 1);
+    }
+    .navbar .logo hr {
+        display: none;
+    }
+}
+
+.space {
+    margin: 25px 220px;
+    width: 30%;
+    text-transform: uppercase;
+}
+
+span {
+    color: #555;
+    margin-right: 10px;
+}
+
+.pick-tech {
+    display: inline-block;
+    width: 25%;
+    text-align: right;
+}
+
+.pick-tech ul {
+    list-style: none;
+    position: relative;
+    left: 80px;
+    margin: 15px;
+    font-size: 42px;
+    text-align: center;
+}
+
+.pick-tech ul li {
+    margin: 25px auto;
+    border: 1px solid #fff;
+    width: 50px;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.pick-tech ul li:hover {
+    cursor: pointer;
+}
+
+.page {
+    display: flex;
+}
+
+.page .paper {
+    width: 75%;
+}
+
+.container {
+    display: flex;
+}
+
+.container .image {
+    width: 40%;
+    height: 60vh;
+}
+
+.container .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.container .contint {
+    width: 60%;
+}
+
+.contint header {
+    margin: 15px;
+    padding: 10px;
+}
+
+.contint header p {
+    margin: 20px 5px;
+}
+
+.contint header h1 {
+    color: #fff;
+    font-size: 3.5rem;
+}
+
+.contint article {
+    width: 75%;
+    margin: 15px 30px;
+    line-height: 1.8;
+}
+
+.active {
+    background-color: #fff;
+    color: #555;
+}
+
+.off {
+    display: none;
+}
+
+@media (min-width: 375px) and (max-width: 992px) {
+    .space {
+        width: 100%;
+        margin: 15px auto;
+        text-align: center;
+    }
+    .page {
+        flex-direction: column;
+    }
+    .pick-tech {
+        width: 100%;
+        position: absolute;
+        bottom: 43%;
+    }
+    .pick-tech ul {
+        left: 0;
+        margin: 25px auto;
+        font-size: 24px;
+    }
+    .pick-tech ul li {
+        margin: 15px;
+        display: inline;
+        padding: 6px 12px;
+    }
+    .page .paper {
+        width: 100%;
+    }
+    .container {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .container .image {
+        width: 100%;
+        height: auto;
+        margin: 25px 0;
+    }
+    .paper .capsule .image img {
+        content: url(../assets/technology/image-space-capsule-landscape.jpg);
+        width: 100%;
+        height: 100%;
+    }
+    .paper .spaceport .image img {
+        content: url(../assets/technology/image-spaceport-landscape.jpg);
+        width: 100%;
+        height: 100%;
+    }
+    .paper .launch .image img {
+        content: url(../assets/technology/image-launch-vehicle-landscape.jpg);
+        width: 100%;
+        height: 100%;
+    }
+    .container .contint {
+        width: 100%;
+        text-align: center;
+        margin: 45px auto;
+    }
+    .contint header h1 {
+        font-size: 2.2rem;
+    }
+    .contint article {
+        width: 80%;
+        margin: 15px auto;
+    }
+}

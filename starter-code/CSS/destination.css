@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../assets/destination/background-destination-desktop.jpg);
+    background-repeat: no-repeat;
+    color: #bbb;
+    min-height: 100vh;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+span {
+    color: #555;
+    margin-right: 10px;
+}
+
+.navbar {
+    padding: 20px 80px;
+    display: flex;
+}
+
+.navbar .logo {
+    width: 50%;
+    padding: 10px;
+}
+
+.navbar .logo hr {
+    display: inline-block;
+    width: 85%;
+    position: relative;
+    top: -42%;
+    left: 85%;
+    transform: translate(-80%, 0);
+    color: rgba(48, 51, 59, 0.5);
+}
+
+.navbar .list {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+    background-color: rgba(48, 51, 59, 0.5);
+}
+
+.navbar .list li {
+    padding: 25px;
+    margin: 0px 10px 0;
+}
+
+.navbar .list li:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.navbar .list li a {
+    color: #fff;
+    text-decoration: none;
+    margin: 15px auto;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+@media (min-width: 375px) and (max-width: 992px) {
+    body {
+        background-image: url(../assets/destination/background-destination-mobile.jpg);
+        background-size: cover;
+        height: auto;
+    }
+    .mobile-nav {
+        display: block;
+        padding: 20px;
+    }
+    .navbar {
+        padding: 30px 20px;
+        justify-content: space-around;
+    }
+    .navbar .list {
+        display: none;
+        background-color: rgba(48, 51, 59, 1);
+    }
+    .navbar .logo hr {
+        display: none;
+    }
+}
+
+.pick {
+    margin: 0px 35px;
+    position: relative;
+    width: 47%;
+}
+
+.pick h2 {
+    text-transform: uppercase;
+    margin: 15px 0 15px 190px;
+}
+
+.container {
+    display: flex;
+}
+
+.container .image {
+    width: 50%;
+    text-align: center;
+    padding: 20px;
+    margin: 45px 0;
+    height: 50vh;
+}
+
+.container .image img {
+    height: 100%;
+}
+
+.content {
+    width: 50%;
+    margin: 35px;
+}
+
+.active {
+    border-bottom: 1px solid #fff;
+}
+
+.on {
+    display: block;
+}
+
+.off {
+    display: none;
+}
+
+.pick-list ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.pick-list .plants li {
+    margin: 15px;
+    padding: 5px 0;
+}
+
+.pick-list .plants li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.pick-list .plants li:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.content header {
+    text-align: left;
+    margin: 15px;
+}
+
+.content header h1 {
+    font-size: 6.5rem;
+    color: #fff;
+}
+
+.content article {
+    width: 62%;
+    margin: 20px 15px 45px;
+    line-height: 1.5;
+}
+
+.content hr {
+    width: 70%;
+}
+
+.content .info {
+    display: flex;
+}
+
+.content .info .km {
+    margin: 25px 25px;
+}
+
+.content .info .dis {
+    margin: 25px 65px;
+}
+
+.content .info p {
+    margin: 10px 0;
+}
+
+@media (min-width: 375px) and (max-width: 992px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    .pick {
+        width: 100%;
+        margin: 15px auto;
+        text-align: center;
+        padding: 0;
+        font-size: 0.75rem;
+    }
+    .pick h2 {
+        margin: 0;
+    }
+    .container .image {
+        width: 80%;
+        margin: 10px auto;
+        padding: 35px;
+        height: auto;
+    }
+    .container .image img {
+        width: 100%;
+    }
+    .content {
+        width: 100%;
+        margin: 15px 0;
+    }
+    .content header {
+        text-align: center;
+        margin: 65px auto 0;
+        width: 100%;
+    }
+    .content header h1 {
+        font-size: 4rem;
+        margin: 45px auto 15px;
+    }
+    .content article {
+        width: 80%;
+        margin: 25px auto;
+    }
+    .content hr {
+        margin: 15px auto;
+    }
+    .content .info {
+        margin: 10px auto;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .content .info .km,
+    .content .info .dis {
+        margin: 10px;
+        text-align: center;
+    }
+    .pick-list ul {
+        width: 100%;
+        margin: 10px auto;
+        justify-content: space-evenly;
+        position: absolute;
+        bottom: 22%;
+    }
+}

@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../assets/crew/background-crew-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    color: #bbb;
+    height: 100vh;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.navbar {
+    padding: 20px 80px;
+    display: flex;
+}
+
+.navbar .logo {
+    width: 50%;
+    padding: 10px;
+}
+
+.navbar .logo hr {
+    display: inline-block;
+    width: 85%;
+    position: relative;
+    top: -42%;
+    left: 85%;
+    transform: translate(-80%, 0);
+    color: rgba(48, 51, 59, 0.5);
+}
+
+.navbar .list {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+    background-color: rgba(48, 51, 59, 0.5);
+}
+
+.navbar .list li {
+    padding: 25px;
+    margin: 0px 10px 0;
+}
+
+.navbar .list li:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.navbar .list li a {
+    color: #fff;
+    text-decoration: none;
+    margin: 15px auto;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+@media (min-width: 375px) and (max-width: 992px) {
+    body {
+        background-image: url(../assets/crew/background-crew-mobile.jpg);
+        background-size: cover;
+        height: auto;
+    }
+    .mobile-nav {
+        display: block;
+        padding: 20px;
+    }
+    .navbar {
+        padding: 30px 20px;
+        justify-content: space-around;
+    }
+    .navbar .list {
+        display: none;
+        background-color: rgba(48, 51, 59, 1);
+    }
+    .navbar .logo hr {
+        display: none;
+    }
+}
+
+.meet {
+    margin: 25px 220px;
+    width: 30%;
+    text-transform: uppercase;
+}
+
+span {
+    color: #555;
+    margin-right: 10px;
+}
+
+.container {
+    display: flex;
+}
+
+.container .content {
+    width: 50%;
+    padding: 10px 0 0 180px;
+    height: 65vh;
+}
+
+.content header {
+    margin: 20px 0 20px 20px;
+}
+
+.content header h2 {
+    margin: 10px 0 10px 10px;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.content header h3 {
+    margin: 15px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.content article {
+    width: 80%;
+    margin: 30px;
+    line-height: 1.8;
+}
+
+.container .image {
+    width: 50%;
+    height: 70vh;
+    padding: 0 150px;
+}
+
+.container .image img {
+    width: 100%;
+    height: 109%;
+    position: relative;
+    bottom: 35px;
+    right: 70px;
+}
+
+.list-crew {
+    display: flex;
+    color: #999;
+    list-style-type: none;
+    width: 20%;
+    position: relative;
+    bottom: 120px;
+    left: 200px;
+}
+
+.list-crew li {
+    margin: 10px;
+}
+
+.active {
+    color: #fff;
+}
+
+.off {
+    display: none;
+}
+
+@media (min-width: 375px) and (max-width: 992px) {
+    .meet {
+        width: 100%;
+        margin: 15px auto;
+        text-align: center;
+    }
+    .info-crew .container {
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .info-crew .container .image {
+        width: 80%;
+        height: 40vh;
+        padding: 0;
+        text-align: center;
+        margin: 10px auto;
+    }
+
+    .info-crew .container .image img {
+        height: 100%;
+        bottom: 0;
+        right: 0;
+        margin: 5px auto;
+    }
+
+    .info-crew .container .content {
+        width: 100%;
+        padding: 0;
+        height: auto;
+    }
+
+    .info-crew .container .content header {
+        margin: 20px;
+    }
+
+    .info-crew .container .content header h2 {
+        font-size: 1.8rem;
+        margin: 5px auto;
+    }
+
+    .info-crew .container .content header h3 {
+        font-size: 1.2rem;
+        margin: 25px auto 15px;
+    }
+
+    .info-crew .container .content article {
+        width: 90%;
+        padding: 5px;
+        margin: 15px auto;
+    }
+
+    .list-crew {
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        margin: 20px auto;
+        display: block;
+        text-align: center;
+    }
+    .list-crew li {
+        display: inline;
+    }
+}
